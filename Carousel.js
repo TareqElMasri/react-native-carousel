@@ -64,6 +64,11 @@ var Carousel = createReactClass({
     this.refs.pager.scrollToPage(activePage);
   },
 
+  scrollToPage(activePage) {
+    this.setState({activePage});
+    this.refs.pager.scrollToPage(activePage);
+  },
+
   renderPageIndicator() {
     if (this.props.hideIndicators === true) {
       return null;
