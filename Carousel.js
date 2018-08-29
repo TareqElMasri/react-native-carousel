@@ -17,6 +17,7 @@ var Carousel = createReactClass({
 
   getDefaultProps() {
     return {
+      scrollEnabled: true,
       hideIndicators: false,
       indicatorColor: '#000000',
       indicatorSize: 50,
@@ -141,6 +142,7 @@ var Carousel = createReactClass({
         <CarouselPager
           ref="pager"
           width={this.getWidth()}
+          scrollEnabled={this.props.scrollEnabled}
           contentContainerStyle={styles.container}
           onBegin={this._onAnimationBeginPage}
           onEnd={this._onAnimationEnd}

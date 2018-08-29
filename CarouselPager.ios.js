@@ -24,6 +24,7 @@ var CarouselPager = createReactClass({
       automaticallyAdjustContentInsets={false}
       horizontal={true}
       pagingEnabled={true}
+      scrollEnabled={this.props.scrollEnabled}
       showsHorizontalScrollIndicator={false}
       bounces={false}
       onScrollBeginDrag={this.props.onBegin}
